@@ -1,0 +1,27 @@
+/*navbar + logo*/
+.navbar {
+margin: 0%;
+}
+
+.list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    width: 100%;
+  }
+
+.list li {
+    float: left;
+  }
+  
+
+.list li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
