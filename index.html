@@ -1,29 +1,243 @@
-<!doctype html>
+
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="description" content="Free Web tutorials for HTML and CSS" />
+    <meta name="author" content="Omar , Ayah , Osama" />
+    <meta http-equiv="refresh" content="300" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="CSS/bootstrap.css" >
-    <link rel="stylesheet" href="CSS/index.css" >
+    <link rel="stylesheet" href="CSS/bootstrap.css" />
+    <link rel="stylesheet" href="CSS/index.css" />
     <title>Hello, world!</title>
   </head>
   <body>
-   <!--nav + logo-->
+    <!--nav + logo-->
     <nav class="navbar">
-        <img>
-        <ul class="list">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="ToDo.html">To-Do List</a></li>
-            <li><a href="Calculator.html">Calculator</a></li>
-          </ul>
+      <ul class="list">
+        <img src="" alt="" />
+        <li><a href="Calculator.html">Calculator</a></li>
+        <li><a href="ToDo.html">To-Do List</a></li>
+        <li><a href="index.html">Home</a></li>
+      </ul>
     </nav>
     <!--nav + logo-->
 
+    <!--form login-->
+    <div class="login">
+      <h1 class="Information">User Information</h1>
+      <form class="needs-validation">
+        <!--login box-->
+        <div class="form-row">
+          <div class="col-md-6 mb-3">
+            <input
+              type="text"
+              class="form-control"
+              id="validationCustom01"
+              value="User Name"
+              required
+            />
+          </div>
+          <div class="col-md-6 mb-3">
+            <input
+              type="email"
+              class="form-control"
+              id="validationCustom02"
+              value="Email"
+              required
+            />
+          </div>
+          <div class="col-md-6 mb-3">
+            <input
+              type="date"
+              id="birthday"
+              name="birthday"
+              class="form-control"
+              id="validationCustom02"
+              value=""
+              required
+            />
+          </div>
+          <div class="col-md-6 mb-3">
+            <input
+              type="text"
+              class="form-control"
+              id="validationCustom02"
+              value="Phone Number"
+              required
+            />
+          </div>
+          <div class="col-md-6 mb-3">
+            <input
+              type="password"
+              class="form-control"
+              id="validationCustom02"
+              value="password"
+              required
+            />
+          </div>
+          <div class="col-md-6 mb-3">
+            <input
+              type="password"
+              class="form-control"
+              id="validationCustom02"
+              value="confirm password"
+              required
+            />
+          </div>
+        </div>
+        <!--login box-->
 
+        <!--checkbox-->
+        <div class="form-group">
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="invalidCheck"
+              required
+            />
+            <label class="form-check-label" for="invalidCheck">
+              Agree to terms and conditions
+            </label>
+            <div class="invalid-feedback">
+              You must agree before submitting.
+            </div>
+          </div>
+        </div>
+        <!--checkbox-->
 
+        <!--button-->
+        <div>
+          <button class="btn btn-primary" type="submit">Clear all</button>
+          <button class="btn btn-primary" type="submit">local storge</button>
+          <button class="btn btn-primary" type="submit">Session storge</button>
+        </div>
+        <!--button-->
+      </form>
+
+      <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+          "use strict";
+          window.addEventListener(
+            "load",
+            function () {
+              // Fetch all the forms we want to apply custom Bootstrap validation styles to
+              var forms = document.getElementsByClassName("needs-validation");
+              // Loop over them and prevent submission
+              var validation = Array.prototype.filter.call(forms, function (
+                form
+              ) {
+                form.addEventListener(
+                  "submit",
+                  function (event) {
+                    if (form.checkValidity() === false) {
+                      event.preventDefault();
+                      event.stopPropagation();
+                    }
+                    form.classList.add("was-validated");
+                  },
+                  false
+                );
+              });
+            },
+            false
+          );
+        })();
+      </script>
+    </div>
+    <!--form login-->
+
+    <!--cards-->
+    <div class="cards">
+      <p class="taxtcards">Our Team</p>
+      <div class="card-deck">
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="Image/omar.jpg"
+            alt="Card image cap"
+            width="200"
+            height="300"
+          />
+          <div class="card-body">
+            <h5 class="card-title">OMAR NAWAISEH</h5>
+            <p class="card-text">This is ale bit longer.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="Image/ayah.jpg"
+            alt="Card image cap"
+            width="200"
+            height="300"
+          />
+          <div class="card-body">
+            <h5 class="card-title">AYAH KHAWALDEH</h5>
+            <p class="card-text">
+              This card has supporting text below as a natural lead-in to
+              additional content.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="..."
+            alt="Card image cap"
+            width="200"
+            height="300"
+          />
+          <div class="card-body">
+            <h5 class="card-title">OSAMA ALADAMAT</h5>
+            <p class="card-text">
+              This is ar content than the first to show that equal height
+              action.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--cards-->
+
+    <!--footar-->
+    <footer>
+      <div class="footer-container">
+        <div class="right-col">
+          <h1>Contact us</h1>
+          <div class="border"></div>
+          <p>If You Have Any Project In Your Mind!</p>
+          <p>If You Have Any Project In Your Mind!</p>
+        </div>
+
+        <div class="right-col">
+          <h1>Contact us</h1>
+          <div class="border"></div>
+          <p>If You Have Any Project In Your Mind!</p>
+          <p>If You Have Any Project In Your Mind!</p>
+        </div>
+
+        <div class="right-col">
+          <h1>Contact us</h1>
+          <div class="border"></div>
+          <p>If You Have Any Project In Your Mind!</p>
+          <p>If You Have Any Project In Your Mind!</p>
+        </div>
+
+        <div class="left-col">
+          <img src="" alt="" class="" />
+        </div>
+        <p class="centar-text">
+          © 2020 Created By<b style="color: brown">A2O </b> Rights Reserved.
+        </p>
+      </div>
+    </footer>
 
     <script src="JavaScript/bootstrap.js"></script>
   </body>

@@ -1,19 +1,19 @@
+/* page 1 */
 /*navbar + logo*/
 .navbar {
-margin: 0%;
+background-color: #333;
+margin: 0;
 }
 
 .list {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     overflow: hidden;
-    background-color: #333;
     width: 100%;
+    float: right;
   }
 
 .list li {
-    float: left;
+    float: right;
   }
   
 
@@ -21,7 +21,264 @@ margin: 0%;
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 10px 5px;
     text-decoration: none;
+    font-size: ;
+
   }
   
+/*navbar + logo End*/
+
+/*login*/
+.login{
+  border: 30%;
+  margin: 5% 20%;
+}
+
+.Information{
+  text-align: center;
+  margin-bottom: 6%;
+}
+/*login End*/
+
+/*cards*/
+.cards{
+  margin: 5% 15% ;
+}
+.card-img-top{
+  /border-radius: 50%;
+}
+.taxtcards{
+  text-align: center;
+  margin-bottom: 6%;
+  font-size: 60px;
+}
+/*cards End*/
+
+/*footer*/
+footer{
+  background: #f8d9d9;
+  padding: 90px 0;
+}
+
+.footer-container{
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+}
+
+
+.social-media{
+  margin: 20px 0;
+}
+
+.social-media a{
+  color: #001a21;
+  margin-right: 25px;
+  font-size: 22px;
+  text-decoration: none;
+  transition: .3s linear;
+}
+
+.social-media a:hover{
+  color: #fc5c65;
+}
+
+.right-col h1{
+  font-size: 26px;
+}
+
+.border{
+  width: 100px;
+  height: 4px;
+  background: #fc5c65;
+}
+
+.newsletter-form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.txtb{
+  flex: 1;
+  padding: 18px 40px;
+  font-size: 16px;
+  color: #293043;
+  background: #ddd;
+  border: none;
+  font-weight: 700;
+  outline: none;
+  border-radius: 30px;
+  min-width: 260px;
+}
+
+.btn:hover{
+  opacity: .7;
+}
+
+.page-content{
+  min-height: 100vh;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width:960px) {
+  .footer-container{
+    max-width: 600px;
+  }
+  .right-col{
+    width: 100%;
+    margin-bottom: 60px;
+  }
+
+  .left-col{
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+@media screen and (max-width:700px){
+  .btn{
+    margin: 0;
+    width: 100%;
+    margin-top: 20px;
+    } 
+}
+/*footer End*/
+
+/* page 1 End */
+
+/*------------------------------------------*/
+
+/* page 2 */
+
+/* To do add */
+
+.to-dotext{
+  text-align: center;
+  font-size: 40px;
+  margin: 3% ;
+}
+
+.to-dobox{
+  text-align: center;
+  margin: 2%  ;
+}
+/**/
+
+/* To do add end*/
+
+.Tolest{
+  margin-left: 30%;
+}
+.box.box-aqua {
+  border-top-color: #00c0ef !important;
+}
+.box.box-green {
+  border-top-color: #00a65a !important;
+}
+.box.box-success {
+  border-top-color: #3c8dbc;
+}
+.box {
+  position: relative;
+  border-radius: 3px;
+  background: #ffffff;
+  border-top: 3px solid #d2d6de;
+  margin-bottom: 20px;
+  width: 100%;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+.box-header {
+  color: #444;
+  display: block;
+  padding: 10px;
+  position: relative;
+}
+.box-header>.ion {
+  margin-right: 5px;
+}
+.box-header .box-title {
+  display: inline-block;
+  font-size: 18px;
+  margin: 0;
+  line-height: 1;
+}
+.box-header>.box-tools {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+}
+.inline {
+  display: inline;
+}
+.box-body {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  padding: 10px;
+}
+.todo-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: auto;
+}
+.todo-list>li {
+  border-radius: 2px;
+  padding: 10px;
+  background: #f4f4f4;
+  margin-bottom: 2px;
+  border-left: 2px solid #e6e7e8;
+  color: #444;
+}
+.todo-list>li .label {
+  margin-left: 10px;
+  font-size: 9px;
+}
+.todo-list>li .tools {
+  display: none;
+  float: right;
+  color: #dd4b39;
+}
+.todo-list>li:hover .tools{
+  display: block;  
+}
+.no-border {
+  border: 0 !important;
+}
+.box-footer {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-top: 1px solid #f4f4f4;
+  padding: 10px;
+  background-color: #fff;
+}
+.btn-default {
+  background-color: #f4f4f4;
+  color: #444;
+  border-color: #ddd;
+}
+.btn {
+  border-radius: 3px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: 1px solid transparent;
+}
+
+/* page 2 End */
+
+/*------------------------------------------*/
+
