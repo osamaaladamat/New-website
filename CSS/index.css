@@ -23,7 +23,6 @@ margin: 0;
     text-align: center;
     padding: 10px 5px;
     text-decoration: none;
-    font-size: ;
 
   }
   
@@ -114,7 +113,40 @@ footer{
 }
 /* To do add end*/
 
+/*to-do lest*/
+.to-dolest ul{
+  margin: 10px 10px ;
+  text-align: right;
+  list-style-type: none;
+  border: 1px solid;
+  padding: 8px;
+  border-radius:10px;
+  
+}
+ .to-dolest li{
+  border: 1px solid;
+  padding: 8px;
+  background-color: #a7a3a5;
+  
+ }
 
+
+.details{
+  margin: 10px 10px ;
+  text-align: left;
+  list-style-type: none;
+  border: 1px solid;
+  padding: 8px;
+  text-align: center;
+  border-radius:10px;
+  
+}
+#gred{
+  display: grid;
+  grid-gap:20px;
+  grid-template-columns: 48% 48%;
+  margin: 4% ;
+}
 
 /* page 2 End */
 
@@ -143,7 +175,7 @@ footer{
   font-weight: 900;
 }
 input[type=button] {
-  background: lightGray;
+  background: #ffe8c6;
   width: 20%;
   font-size: 20px;
   font-weight: 900;
@@ -151,15 +183,7 @@ input[type=button] {
   margin-left: 13px;
   margin-top: 10px;
 }
-input[type=button]:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
-input[type=button]:hover {
-  background-color: #003300;
-  color: white;
-}
+
 
 input[type = number] {
   position: relative;
@@ -169,4 +193,11 @@ input[type = number] {
   font-size: 20px;
   padding: 10px;
   
+}
+
+#Equal{
+  background-color:#1cc3d5 ;
+}
+#cllen{
+  background-color: #ff6d76;
 }
